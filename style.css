@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Spartan", sans-serif;
+}
+
+body {
+  padding: 60px 200px;
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  height: 45%;
+}
+
+header .banner {
+  width: 35%;
+  float: left;
+}
+
+header .banner h1 {
+  font-size: 3rem;
+  color: #502050;
+}
+
+header .banner p {
+  color: #937b92;
+  font-weight: 500;
+  padding-top: 20px;
+}
+
+header .stars {
+  width: 65%;
+  float: left;
+  height: 50%;
+  padding: 20px 0;
+}
+
+header .stars .rates {
+  padding: 15px;
+  background-color: #f7f2f7;
+  border-radius: 10px;
+  width: 410px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0;
+}
+
+header .stars .rates img {
+  padding-right: 10px;
+  display: block;
+}
+
+header .stars .rates p {
+  padding-left: 10px;
+  color: #502050;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+header .stars .rates::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+header .stars .rates:first-child {
+  -webkit-transform: translateX(150px);
+          transform: translateX(150px);
+}
+
+header .stars .rates:nth-child(2) {
+  -webkit-transform: translateX(250px);
+          transform: translateX(250px);
+}
+
+header .stars .rates:last-child {
+  -webkit-transform: translateX(350px);
+          transform: translateX(350px);
+}
+
+main {
+  width: 100%;
+  height: 55%;
+  padding: 0 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .padding {
+  -webkit-box-flex: 33.33%;
+      -ms-flex: 33.33%;
+          flex: 33.33%;
+  min-width: 33.33%;
+  height: 350px;
+  padding: 10px;
+}
+
+main .padding .comment-boxes {
+  width: 100%;
+  height: 230px;
+  background-color: #502050;
+  border-radius: 20px;
+  padding: 35px 30px;
+}
+
+main .padding .comment-boxes img {
+  border-radius: 50%;
+  width: 60px;
+  float: left;
+  padding-right: 10px;
+  display: block;
+}
+
+main .padding .comment-boxes h3 {
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  padding-top: 8px;
+}
+
+main .padding .comment-boxes span {
+  color: #ee68a4;
+  font-size: 13px;
+}
+
+main .padding .comment-boxes p {
+  font-size: 13px;
+  font-weight: 400;
+  color: white;
+  line-height: 1.5;
+}
+
+main .padding:first-child {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+main .padding:nth-child(2) {
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+main .padding:last-child {
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+}
+
+@media screen and (max-width: 1391px) {
+  body {
+    padding: 60px 100px;
+  }
+}
+
+@media screen and (max-width: 1277px) {
+  header .banner {
+    width: 45%;
+  }
+  header .stars {
+    width: 55%;
+  }
+  header .stars .rates:first-child {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  header .stars .rates:nth-child(2) {
+    -webkit-transform: translateX(70px);
+            transform: translateX(70px);
+  }
+  header .stars .rates:last-child {
+    -webkit-transform: translateX(150px);
+            transform: translateX(150px);
+  }
+}
+
+@media screen and (max-width: 1184px) {
+  main {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1089px) {
+  body {
+    padding: 60px 50px;
+  }
+}
+
+@media screen and (max-width: 1277px) {
+  header .banner {
+    width: 40%;
+  }
+  header .stars {
+    width: 60%;
+  }
+  header .stars .rates:first-child {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  header .stars .rates:nth-child(2) {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  header .stars .rates:last-child {
+    -webkit-transform: translateX(90px);
+            transform: translateX(90px);
+  }
+  main .padding .comment-boxes {
+    height: 270px;
+  }
+}
+
+@media screen and (max-width: 1277px) {
+  body {
+    height: auto;
+  }
+  header .banner {
+    width: 100%;
+    text-align: center;
+  }
+  header .stars {
+    width: 100%;
+  }
+  header .stars .rates {
+    margin: 20px auto;
+  }
+  header .stars .rates:first-child {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  header .stars .rates:nth-child(2) {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  header .stars .rates:last-child {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  main {
+    height: auto;
+  }
+  main .padding .comment-boxes {
+    height: 270px;
+  }
+  main .padding:first-child {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  main .padding:nth-child(2) {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  main .padding:last-child {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 861px) {
+  main {
+    height: auto;
+  }
+  main .padding .comment-boxes {
+    height: 340px;
+    text-align: center;
+  }
+  main .padding .comment-boxes img {
+    float: none;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 861px) {
+  main .padding .comment-boxes {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 652px) {
+  main .padding {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    min-width: 100%;
+    margin: 0;
+  }
+  main .padding .comment-boxes {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 518px) {
+  header .stars .rates {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  header .stars .rates img {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 332px) {
+  body {
+    padding: 40px 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
